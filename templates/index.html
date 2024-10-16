@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Arya Isnaidi | Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="content_category" content="aryaisnaidi, programmer islami, web developer" />
+    <meta name="content_subcategory" content="aryaisnaidi, programmer islami, web developer" />
+    <meta name="content_location" content="aryaisnaidi, programmer islami, web developer" />
+    <meta name="content_author" content="aryaisnaidi, programmer islami, web developer" />
+    <meta name="content_editor" content="aryaisnaidi, programmer islami, web developer" />
+    <meta name="news_keywords" content="arya isnaidi putra terbaik bangka belitung, programmer islami, web developer" />
+    <meta name="description" content="aryaisnaidi, arya isnaidi, arya, isnaidi, programmer islami, web developer" />
+    <meta name="keywords" content="aryaisnaidi" />
+    <meta name="author" content="aryaisnaidi" />
+
+    <!-- Favicon -->
+    <link href="{{ url_for('static', filename='img/profil-arya.JPG') }}" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS Libraries -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/slick/slick.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/slick/slick-theme.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='flaticon-1/flaticon_1.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='flaticon/flaticon.css') }}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="{{ url_for('static', filename='img/profil-arya.JPG') }}" alt="Image">
+            </div>
+            <div class="sidebar-content">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">Portofolio.</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#header">Home<i class="fa fa-home"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About<i class="flaticon-381-id-card-1"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experience">Experience<i class="flaticon-381-star-1"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#service">Service<i class="flaticon-144-layout"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio<i class="far fa-file-archive"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact<i class="far fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="sidebar-footer">
+                <a href="https://wa.me/+6285788241715"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100069973894907"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/arya-isnaidi-09642021b"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="content">
+            <!-- Header Start -->
+            <div class="header" id="header">
+                <div class="content-inner">
+                    <p>I'm</p>
+                    <h1><span>Arya</span> Isnaidi</h1>
+                    <h2></h2>
+                    <div class="typed-text">Web Developer, Front End Developer, Back End Developer, Apps Developer,
+                        UI/UX Designer, Networking Security, Networking Administrator</div>
+                </div>
+            </div>
+            <!-- Header End -->
+
+            <!-- Large Button Start -->
+            <div class="large-btn">
+                <div class="content-inner">
+                    <a class="btn" href="{{ url_for('static', filename='files/CV_Arya Isnaidi.pdf') }}"><i class="fa fa-download"></i>Resume</a>
+                    <a class="btn" href="mailto:aryaisnaidi01@gmail.com"><i class="fa fa-hands-helping"></i>Hire Me</a>
+                </div>
+            </div>
+            <!-- Large Button End -->
+
+            <!-- About Start -->
+            <div class="about" id="about">
+                <div class="content-inner">
+                    <div class="content-header">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-lg-5">
+                            <img src="{{ url_for('static', filename='img/profil-arya.JPG') }}" alt="Image">
+                        </div>
+                        <div class="col-md-6 col-lg-7">
+                            <p align="justify">
+                                Nama saya Arya Isnaidi. Saya lulusan Pengembangan Perangkat Lunak yang mencintai dunia
+                                Digital. Saya memiliki pengalaman menjadi Project Manajer dan Back End Developer Selama
+                                2 bulan. Saya memiliki pengalaman menjadi Front End Developer. Saya memiliki
+                                pengalaman menjadi Apps Developer Selama 1 bulan. Saya memiliki pengalaman menjadi UI
+                                dan UX Selama 3 bulan. Saya Memiliki Skill lainnya seperti Networking Security, dan
+                                Networking Administration.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p>Web Design</p>
+                                    <p>85%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Web Developer</p>
+                                    <p>88%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p>Development</p>
+                                    <p>90%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Administrator Sistem Jaringan</p>
+                                    <p>90%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+
+            <!-- Education Start -->
+            <div class="education" id="education">
+                <div class="content-inner">
+                    <div class="content-header">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="edu-col">
+                                <span>2009 <i>to</i> 2015</span>
+                                <h3>SD Negeri 49 Pangkal Pinang</h3>
+                                <p>SD Negeri 49 bertempat di Girimaya, Kel. Bukit Besar, Kota Pangkalpinang, Prov.
+                                    Bangka Belitung.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="edu-col">
+                                <span>2018 <i>to</i> 2021</span>
+                                <h3>SMK Negeri 2 Pangkal Pinang</h3>
+                                <p>SMP Negeri 8 bertempat di Girimaya, Kel. Bukit Besar, Kota Pangkalpinang, Prov.
+                                    Bangka Belitung.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="edu-col">
+                                <span>2015 <i>to</i> 2018</span>
+                                <h3>SMP Negeri 8 Pangkal Pinang</h3>
+                                <p>Sekolah kejuruan teknik di pangkalpinang.
+                                <p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="edu-col">
+                                <span>2021 <i>to</i> 2022</span>
+                                <h3>D2 Profesi Pesantren Teknologi Informasi & Komunikasi</h3>
+                                <p>Salah satu pesantren yang selain belajar agama juga belajar tentang teknologi.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="edu-col">
+                                <span>2022 <i>to</i> Now</span>
+                                <h3>STT Terpadu Nurul Fikri</h3>
+                                <p>sttnf salah satu kampus it terbaik di jakarta selatan dan depok sangat terpercaya
+                                    dengan dosen tenaga ahli terbaik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Education Start -->
+
+            <!-- Experience Start -->
+            <div class="experience" id="experience">
+                <div class="content-inner">
+                    <div class="content-header">
+                        <h2>Experience</h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="exp-col">
+                                <span>10-Januari-2020 <i>to</i> 09-April-2020</span>
+                                <h5>Networking Security dan Networking Administrator</h5>
+                                <p>Menganalisis dan memantau keamanan server dan perbaikan untuk mengatasi ancaman
+                                    keamanan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="exp-col">
+                                <span>01-Juni-2022 <i>to</i> 15 Juli 2022</span>
+                                <h5>Project Management and Backend Developer</h5>
+                                <p>Membuat Rencana Proyek, Mitigasi Masalah dan Krisis, Mengolah database, Mengelola
+                                    teknologi web server, Membangun software server side .
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="exp-col">
+                                <span>28-Juli-2023 <i>to</i> Now</span>
+                                <h5>Freelance Web Developer</h5>
+                                <p style="text-align: justify;">
+                                    Membangun Antarmuka Pengguna (UI) Seperti : Mengembangkan elemen-elemen
+                                    visual dari situs web menggunakan HTML, CSS, dan JavaScript. Untuk
+                                    selebihnya itu berkaitan dengan Pengembangan Frontend.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="exp-col">
+                                <span>01-Agustus-2024 <i>to</i> Now</span>
+                                <h5>Mengajar Coding Scarth di Teman Pelajar</h5>
+                                <p style="text-align: justify;">Saya memiliki pengalaman dalam mengajar coding
+                                    menggunakan Scratch, sebuah platform
+                                    visual yang memudahkan anak-anak dan pemula dalam memahami konsep pemrograman. Dalam
+                                    peran ini, saya membantu siswa mengembangkan keterampilan logika, pemecahan masalah,
+                                    dan kreativitas melalui pembuatan proyek interaktif dan game sederhana.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Experience Start -->
+
+            <!-- Service Start -->
+            <div class="service" id="service">
+                <div class="content-inner">
+                    <div class="content-header">
+                        <h2>Service</h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="srv-col">
+                                <i class="fa fa-desktop"></i>
+                                <h3>Web Design</h3>
+                                <p>Menciptakan desain website yang modern dan responsif, memastikan tampilan yang
+                                    menarik dan user-friendly di berbagai perangkat.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="srv-col">
+                                <i class="fa fa-laptop"></i>
+                                <h3>Web Development</h3>
+                                <p>Solusi pengembangan web yang handal dan efisien, dengan teknologi terbaru untuk
+                                    performa yang optimal dan integrasi yang mulus.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="srv-col">
+                                <i class="fa fa-search"></i>
+                                <h3>SEO</h3>
+                                <p>Meningkatkan visibilitas website Anda di mesin pencari dengan strategi SEO yang
+                                    efektif, mendatangkan lebih banyak pengunjung berkualitas.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="srv-col">
+                                <i class="fa fa-envelope-open-text"></i>
+                                <h3>Cyber Security</h3>
+                                <p>Memberi perlindungan menyeluruh untuk website Anda dengan solusi keamanan siber yang
+                                    canggih, menjaga data dan informasi dari ancaman online.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Service Start
+
+            <!-- Portfolio Start -->
+            <div class="portfolio" id="portfolio">
+                <div class="content-inner">
+                    <div class="content-header">
+                        <h2>Portfolio</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul id="portfolio-flters">
+                                <li data-filter="*" class="filter-active">All</li>
+                                <li data-filter=".web-des">Web Development</li>
+                                <li data-filter=".dig-mar">Networking</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row portfolio-container">
+                        <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{{ url_for('static', filename='img/screencapture-020810-xyz-2022-07-10-21_42_48.png') }}" class="img-fluid" alt="">
+                                    <a href="{{ url_for('static', filename='img/screencapture-020810-xyz-2022-07-10-21_42_48.png') }}" data-lightbox="portfolio" data-title="Website Restorant" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    <a class="portfolio-title" href="#"> Website Restorant <span>Web Design</span></a>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{{ url_for('static', filename='img/screencapture-arridlo-epizy-2022-07-10-21_58_10.png') }}" class="img-fluid" alt="">
+                                    <a href="{{ url_for('static', filename='img/screencapture-arridlo-epizy-2022-07-10-21_58_10.png') }}" class="link-preview" data-lightbox="portfolio" data-title="Website Pesatren Daarul Qur'an Al-jannah" title="Preview"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    <a class="portfolio-title" href="#"> Aplikasi Perpustakaan <span>Application
+                                            Web</span></a>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{{ url_for('static', filename='img/screencapture-127-0-0-1-8000-page-apps-lainnya-Kelola-manajamen-manajemen-2022-07-10-22_05_38.png') }}" class="img-fluid" alt="">
+                                    <a href="{{ url_for('static', filename='img/screencapture-127-0-0-1-8000-page-apps-lainnya-Kelola-manajamen-manajamen-2022-07-10-22_05_38.png') }}" class="link-preview" data-lightbox="portfolio" data-title="Aplikasi Web Pesatren Daarul Qur'an Al-jannah" title="Preview"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    <a class="portfolio-title" href="#"> Website Pesatren Daarul Qur'an Al-jannah
+                                        <span>Web Design</span></a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{{ url_for('static', filename='img/install-jitsi-meet-on-ubuntu-18-04-self-hosted-video-conferencing-1024x586.png') }}" class="img-fluid" alt="">
+                                    <a href="{{ url_for('static', filename='img/install-jitsi-meet-on-ubuntu-18-04-self-hosted-video-conferencing-1024x586.png') }}" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    <a class="portfolio-title" href="#"> Aplikasi Web Pesatren Daarul Qur'an Al-jannah
+                                        <span> Application Web</span></a>
+                                </figure>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{{ url_for('static', filename='img/1_-2YtNDBtZaQH8hQRC7WH7g.png') }}" class="img-fluid" alt="">
+                                    <a href="{{ url_for('static', filename='img/1_-2YtNDBtZaQH8hQRC7WH7g.png') }}" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    <a class="portfolio-title" href="#">Membangun Jistsi Meeting Untuk Server <span>
+                                            Networking Administrator</span></a>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="img/1_-2YtNDBtZaQH8hQRC7WH7g.png" class="img-fluid" alt="">
+                                    <a href="img/1_-2YtNDBtZaQH8hQRC7WH7g.png" class="link-preview"
+                                        data-lightbox="portfolio" data-title="Project Name" title="Preview"><i
+                                            class="fa fa-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    <a class="portfolio-title" href="#">Membangun Open VPN Server <span> Networking
+                                            Security</span></a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Start -->
+
+
+            <!-- Contact Start -->
+            <div class="contact" id="contact">
+                <div class="content-inner">
+                    <div class="content-header">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="contact-info">
+                                <p><i class="fa fa-user"></i>Arya Isnaidi</p>
+                                <p><i class="fa fa-tag"></i>Web Designer & Developer</p>
+                                <p><i class="fa fa-envelope"></i><a
+                                        href="mailto:aryaisnaidi01@gmail.com">aryaisnaidi01@gmail.com</a></p>
+                                <p><i class="fa fa-phone"></i><a href="tel:+6285788241715">+62 857 8824 1715</a></p>
+                                <p><i class="fa fa-map-marker"></i>No, Jl. Kp. Rangkapan Jaya No.34, Rangkapan Jaya,
+                                    Kec. Pancoran Mas, Kota Depok, Jawa Barat 16434</p>
+                                <div class="social">
+                                    <a class="btn" href="https://www.facebook.com/profile.php?id=100069973894907"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href="https://www.linkedin.com/in/arya-isnaidi-09642021b"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href="https://www.instagram.com/aryaisnaidi_"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a class="btn" href="https://wa.me/+62857888241715"><i
+                                            class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Your Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="3"
+                                            placeholder="Message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact End -->
+
+            <!-- Footer Start -->
+            <div class="footer">
+                <div class="content-inner">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p>&copy; Copyright <a href="index.html">Arya Isnaidi</a>. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Start -->
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Update JavaScript paths -->
+    <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/slick/slick.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/typed/typed.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
